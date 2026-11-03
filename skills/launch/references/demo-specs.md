@@ -2,6 +2,14 @@
 
 A **demo spec** is a filmed end-to-end test. It drives the real app at human pace, and each **scene** is one screen beat of the script: it rolls the camera, performs the beat, asserts what the viewer sees, holds until the beat's line has been said, and cuts. Everything outside a scene (seeding, setup, waiting on background jobs) never reaches the footage. A passing spec is the proof the video is true; its output is B-roll ready to edit.
 
+## Contents
+
+- Set up once per repo
+- Write one
+- Run it
+- Review it
+- Why it is built this way
+
 ## Set up once per repo
 
 Requires Playwright with Chromium, and ffmpeg with libx264 on the PATH.

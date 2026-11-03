@@ -1,0 +1,14 @@
+{
+  "name": "launch-demo",
+  "description": "launch: turn shipped features into launch demos, filmed from the real app.",
+  "owner": {
+    "name": "Hazli Johar"
+  },
+  "plugins": [
+    {
+      "name": "launch",
+      "source": "./",
+      "description": "Turn shipped features into launch demos: find what is launchable, script each one in the founder's voice, film the B-roll from the real app as end-to-end tests, gate the launch and write the posts."
+    }
+  ]
+}

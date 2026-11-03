@@ -1,0 +1,19 @@
+{
+  "name": "launch",
+  "version": "0.1.0",
+  "description": "Turn shipped features into launch demos: find what is launchable, script each one in the founder's voice, film the B-roll from the real app as end-to-end tests, gate the launch and write the posts.",
+  "author": {
+    "name": "Hazli Johar"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/hazlijohar95/launch-demo",
+  "repository": "https://github.com/hazlijohar95/launch-demo",
+  "keywords": [
+    "launch",
+    "demo",
+    "video",
+    "b-roll",
+    "playwright",
+    "marketing"
+  ]
+}

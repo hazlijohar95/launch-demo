@@ -6,11 +6,14 @@ The voice is built on Farza Majeed's launch playbook: demos, not launches; one p
 
 ## Install
 
-Claude Code reads skills from `~/.claude/skills/` (every project) or `<repo>/.claude/skills/` (one project):
+As a Claude Code plugin:
 
-```bash
-git clone git@github.com:hazlijohar95/launch-demo.git ~/.claude/skills/launch
 ```
+/plugin marketplace add hazlijohar95/launch-demo
+/plugin install launch@launch-demo
+```
+
+For another agent, copy `skills/launch/` into the folder it reads skills from.
 
 Then run `/launch`, or ask your agent to launch, demo or make a video of your features.
 
@@ -19,17 +22,22 @@ Then run `/launch`, or ask your agent to launch, demo or make a video of your fe
 - Playwright with Chromium, and an existing end-to-end setup the demo specs can reuse.
 - ffmpeg with libx264 on the PATH.
 
-The filming tools in `scripts/` are templates: the agent copies them into the repo it is filming. See `references/demo-specs.md`.
+The filming tools in `skills/launch/scripts/` are templates: the agent copies them into the repo it is filming. See `skills/launch/references/demo-specs.md`.
 
 ## Layout
 
-| Path                        | What it holds                                    |
-| --------------------------- | ------------------------------------------------ |
-| `SKILL.md`                  | The seven steps, each with its done criteria     |
-| `references/voice.md`       | Farza's playbook, distilled, with sources        |
-| `references/script.md`      | Segment, cold open, outro and channel templates  |
-| `references/demo-specs.md`  | Writing, running and reviewing a filmed e2e test |
-| `references/launch-gate.md` | The checks a segment passes before it goes out   |
-| `scripts/shoot.ts`          | Takes, scenes, pacing and encoding               |
-| `scripts/stage.ts`          | A visible, human-paced cursor and typing         |
-| `scripts/stills.mjs`        | Review stills per beat and a duration check      |
+| Path                                      | What it holds                                    |
+| ----------------------------------------- | ------------------------------------------------ |
+| `skills/launch/SKILL.md`                  | The seven steps, each with its done criteria     |
+| `skills/launch/references/voice.md`       | Farza's playbook, distilled, with sources        |
+| `skills/launch/references/script.md`      | Segment, cold open, outro and channel templates  |
+| `skills/launch/references/demo-specs.md`  | Writing, running and reviewing a filmed e2e test |
+| `skills/launch/references/launch-gate.md` | The checks a segment passes before it goes out   |
+| `skills/launch/scripts/shoot.ts`          | Takes, scenes, pacing and encoding               |
+| `skills/launch/scripts/stage.ts`          | A visible, human-paced cursor and typing         |
+| `skills/launch/scripts/stills.mjs`        | Review stills per beat and a duration check      |
+| `.claude-plugin/`                         | Plugin and marketplace manifests, and the icon   |
+
+## License
+
+[MIT](LICENSE)
