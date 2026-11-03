@@ -1,4 +1,4 @@
-# launch-demo
+# launch
 
 An agent skill that turns shipped features into launch demos. Point an agent at a codebase and it finds what is launchable, writes a one-minute script per feature in the founder's voice, films the B-roll from the real app as filmed end-to-end tests that prove each flow works, gates the launch, and writes the posts. The founder fills in their own stories, records the to-camera lines, and posts.
 
@@ -9,10 +9,10 @@ The voice is built on Farza Majeed's launch playbook: demos, not launches; one p
 Claude Code reads skills from `~/.claude/skills/` (every project) or `<repo>/.claude/skills/` (one project):
 
 ```bash
-git clone git@github.com:hazlijohar95/launch-demo.git ~/.claude/skills/launch-demo
+git clone git@github.com:hazlijohar95/launch-demo.git ~/.claude/skills/launch
 ```
 
-Then ask your agent to launch, demo or make a video of your features.
+Then run `/launch`, or ask your agent to launch, demo or make a video of your features.
 
 ## What filming needs
 

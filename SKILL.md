@@ -1,5 +1,5 @@
 ---
-name: launch-demo
+name: launch
 description: Turn shipped features into launch demos, end to end. Finds what is launchable in the codebase, writes the script in a founder's own voice (built on Farza Majeed's playbook), films the B-roll from the real app as filmed e2e tests that prove each flow works, gates the launch, and writes the posts. Use when asked to launch, demo, announce or make a video of features, or to script, film or record B-roll of a product.
 ---
 
